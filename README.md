@@ -2,14 +2,13 @@
 
 > **Read-only archive of released versions of cengizkemec/flarum-contact-page.** Not for installation: use [Packagist](https://packagist.org/packages/cengizkemec/flarum-contact-page) or the [upstream repository](https://github.com/cengizkemec/flarum-contact-page).
 
-**2** versions archived · Latest: [`v1.0.1`](https://github.com/flarchive/cengizkemec-flarum-contact-page/tree/archive/v1.0.1) · License: `MIT` · Flarum: `^2.0.0`
+**0** versions archived · Latest: [`v1.0.2`](https://github.com/flarchive/cengizkemec-flarum-contact-page/tree/archive/v1.0.2) · License: `MIT` · Flarum: `^2.0.0`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| `v1.0.0` | 2026-10-30 | `^2.0.0` | [Browse](https://github.com/flarchive/cengizkemec-flarum-contact-page/tree/archive/v1.0.0) |
-| `v1.0.1` | 2026-10-30 | `^2.0.0` | [Browse](https://github.com/flarchive/cengizkemec-flarum-contact-page/tree/archive/v1.0.1) |
+| — | — | — | — |
 
 Catalog entry: [packages/cengizkemec-flarum-contact-page.json](https://github.com/flarchive/archive-index/blob/main/packages/cengizkemec-flarum-contact-page.json)
 
