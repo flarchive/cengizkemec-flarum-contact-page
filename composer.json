@@ -1,0 +1,92 @@
+{
+    "name": "cengizkemec/flarum-contact-page",
+    "description": "A configurable, spam-protected contact page for Flarum 2.0.",
+    "type": "flarum-extension",
+    "license": "MIT",
+    "keywords": [
+        "flarum",
+        "contact",
+        "contact-form",
+        "turnstile",
+        "extension"
+    ],
+    "homepage": "https://github.com/cengizkemec/flarum-contact-page",
+    "support": {
+        "issues": "https://github.com/cengizkemec/flarum-contact-page/issues",
+        "source": "https://github.com/cengizkemec/flarum-contact-page",
+        "docs": "https://github.com/cengizkemec/flarum-contact-page#readme"
+    },
+    "authors": [
+        {
+            "name": "Cengiz Kemeç",
+            "homepage": "https://github.com/cengizkemec"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "flarum/core": "^2.0.0"
+    },
+    "require-dev": {
+        "flarum/phpstan": "^2.0.0",
+        "flarum/testing": "^2.0.0",
+        "mockery/mockery": "^1.6",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^12.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cengizkemec\\ContactPage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cengizkemec\\ContactPage\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        },
+        "flarum-extension": {
+            "title": "Contact Page",
+            "category": "feature",
+            "database-support": [
+                "mysql",
+                "mariadb",
+                "sqlite",
+                "pgsql"
+            ],
+            "icon": {
+                "name": "fas fa-envelope",
+                "backgroundColor": "#4D698E",
+                "color": "#fff"
+            }
+        }
+    },
+    "scripts": {
+        "test": [
+            "@test:unit",
+            "@test:integration"
+        ],
+        "test:unit": "phpunit -c tests/phpunit.unit.xml",
+        "test:unit:filter": "phpunit -c tests/phpunit.unit.xml --filter",
+        "test:integration": "phpunit -c tests/phpunit.integration.xml",
+        "test:integration:filter": "phpunit -c tests/phpunit.integration.xml --filter",
+        "test:setup": "@php tests/integration/setup.php",
+        "analyse": "phpstan analyse --memory-limit=1G"
+    },
+    "scripts-descriptions": {
+        "test": "Runs all backend tests.",
+        "test:unit": "Runs backend unit tests.",
+        "test:unit:filter": "Runs unit tests whose name matches: composer test:unit:filter -- ClassName",
+        "test:integration": "Runs backend integration tests.",
+        "test:integration:filter": "Runs integration tests whose name matches: composer test:integration:filter -- ClassName",
+        "test:setup": "Sets up the SQLite database used by integration tests.",
+        "analyse": "Runs PHPStan static analysis."
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
