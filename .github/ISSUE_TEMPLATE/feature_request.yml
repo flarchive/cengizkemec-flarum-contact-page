@@ -1,0 +1,38 @@
+name: Feature request
+description: Suggest an improvement for Contact Page.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Feature requests should fit Flarum 2.0's architecture and the extension's
+        privacy/security model.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem are you trying to solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the behaviour you would like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any existing extensions, workarounds or other approaches?
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I have searched existing issues and discussions.
+          required: true
+        - label: This proposal does not require storing visitor messages permanently.
+          required: false

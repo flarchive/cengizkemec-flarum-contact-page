@@ -1,0 +1,252 @@
+cengizkemec-contact-page:
+  forum:
+    nav: İletişim
+    page_title: İletişim
+    page_description: "Bize mesaj gönderin, en kısa sürede size dönüş yapalım."
+    success_message: "Mesajınız başarıyla gönderildi. Teşekkür ederiz!"
+    submit_button: Mesaj gönder
+    sending: Gönderiliyor...
+    send_another: Yeni mesaj gönder
+    privacy_link: gizlilik politikası
+    select_category: Bir kategori seçin
+    required_field: Zorunlu
+    optional_field: İsteğe bağlı
+    character_count: "{count} / {max} karakter"
+    turnstile_label: Güvenlik doğrulaması
+    turnstile_loading: Güvenlik doğrulaması yükleniyor...
+    turnstile_error: "Güvenlik doğrulaması yüklenemedi. Lütfen sayfayı yenileyip tekrar deneyin."
+    turnstile_expired: "Güvenlik doğrulamasının süresi doldu. Lütfen tekrar doğrulayın."
+
+    fields:
+      name_label: Ad soyad
+      name_placeholder: Adınız ve soyadınız
+      email_label: E-posta adresi
+      email_placeholder: ornek@eposta.com
+      subject_label: Konu
+      subject_placeholder: Mesajınızın konusu nedir?
+      message_label: Mesaj
+      message_placeholder: Mesajınızı buraya yazın...
+      category_label: Kategori
+      category_placeholder: Bir kategori seçin
+      phone_label: Telefon numarası
+      phone_placeholder: "+90 555 000 00 00"
+      privacy_label: Gizlilik politikasını kabul ediyorum
+
+    access:
+      disabled: "İletişim formu şu anda devre dışı."
+      guests_not_allowed: "İletişim formunu kullanmak için lütfen giriş yapın."
+      registered_not_allowed: "İletişim formu yalnızca misafir ziyaretçiler tarafından kullanılabilir."
+      guest_submissions_disabled: "Misafir gönderimleri şu anda kapalı."
+      registered_submissions_disabled: "Kayıtlı kullanıcı gönderimleri şu anda kapalı."
+      email_verification_required: "İletişim formunu kullanmadan önce lütfen e-posta adresinizi doğrulayın."
+      unavailable: "İletişim formu şu anda kullanılamıyor."
+
+    validation:
+      required: "{field} alanı zorunludur."
+      name_too_short: "Adınız en az 2 karakter olmalıdır."
+      name_too_long: "Adınız en fazla 100 karakter olabilir."
+      email_invalid: "Lütfen geçerli bir e-posta adresi girin."
+      subject_too_long: "Konu en fazla {max} karakter olabilir."
+      message_too_short: "Mesajınız en az {min} karakter olmalıdır."
+      message_too_long: "Mesajınız en fazla {max} karakter olabilir."
+      category_invalid: "Lütfen geçerli bir kategori seçin."
+      phone_invalid: "Lütfen geçerli bir telefon numarası girin."
+      privacy_required: "Devam etmek için gizlilik politikasını kabul etmelisiniz."
+
+    errors:
+      generic: "Bir hata oluştu. Lütfen tekrar deneyin."
+      rate_limited: "Çok fazla istek gönderiyorsunuz. Lütfen {seconds} saniye bekleyip tekrar deneyin."
+      duplicate: "Bu mesaj zaten gönderildi. Lütfen tekrar denemeden önce birkaç dakika bekleyin."
+      turnstile_missing: "Lütfen güvenlik doğrulamasını tamamlayın."
+      turnstile_failed: "Güvenlik doğrulaması başarısız oldu. Lütfen sayfayı yenileyip tekrar deneyin."
+      turnstile_expired: "Güvenlik doğrulamasının süresi doldu. Lütfen tekrar deneyin."
+      turnstile_duplicate: "Bu güvenlik doğrulaması zaten kullanıldı. Lütfen sayfayı yenileyip tekrar deneyin."
+      turnstile_unavailable: "Güvenlik doğrulama hizmetine ulaşılamıyor. Lütfen daha sonra tekrar deneyin."
+      mail_unavailable: "İletişim formu geçici olarak kullanılamıyor. Lütfen daha sonra tekrar deneyin."
+      mail_delivery_failed: "Mesajınız gönderilemedi. Lütfen daha sonra tekrar deneyin."
+      payload_too_large: "Gönderilen veri çok büyük."
+      bad_request: "Geçersiz istek. Lütfen sayfayı yenileyip tekrar deneyin."
+
+  admin:
+    sections:
+      general: Genel
+      access: Erişim izinleri
+      form: Form yapılandırması
+      fields: Form alanları
+      limits: Mesaj sınırları
+      email: E-posta
+      security: Güvenlik
+      turnstile: Cloudflare Turnstile
+      abuse: Hız sınırlama ve kötüye kullanım koruması
+      localization: Yerelleştirme
+
+    settings:
+      enabled_label: İletişim sayfasını etkinleştir
+      enabled_help: "Kapalıyken iletişim sayfası ve menü öğesi kullanılamaz. Ayarlar korunur."
+      show_in_navigation_label: Kenar çubuğu menüsünde göster
+      show_in_navigation_help: "Forumu sol kenar çubuğuna bir iletişim bağlantısı ekler."
+      nav_label_label: Menü etiketi
+      nav_label_help: "Çevrilmiş varsayılanı (Contact / İletişim) kullanmak için boş bırakın."
+      page_title_label: Sayfa başlığı
+      page_title_help: "Çevrilmiş varsayılanı kullanmak için boş bırakın."
+      page_description_label: Sayfa açıklaması
+      page_description_help: "Sayfa başlığının altında gösterilir. Yalnızca düz metin."
+      success_message_label: Başarı mesajı
+      success_message_help: "Mesaj başarıyla gönderildikten sonra gösterilir. Çevrilmiş varsayılan için boş bırakın."
+      categories_label: İletişim kategorileri
+      categories_help: "Her satıra bir kategori yazın. Liste boşsa kategori alanı gizlenir."
+      default_language_label: Varsayılan dil
+      default_language_help: "Mevcut forum dili İngilizce veya Türkçe değilse yedek olarak kullanılır. Mevcut dil mevcut olduğunda her zaman önceliklidir."
+
+      access_mode_label: İletişim formunu kimler kullanabilir?
+      access_mode_help: "Bu ayar sunucuda uygulanır. Aşağıdaki ek anahtarlar erişimi daha da daraltabilir."
+      allow_guest_submissions_label: Misafir gönderimlerine izin ver
+      allow_guest_submissions_help: "Misafirler yine de etkin tüm güvenlik kontrollerini tamamlamalıdır."
+      allow_registered_submissions_label: Kayıtlı kullanıcı gönderimlerine izin ver
+      allow_registered_submissions_help: "Kapalıyken giriş yapmış kullanıcılar formu gönderemez."
+      require_email_verification_label: Kayıtlı kullanıcılar için e-posta doğrulaması iste
+      require_email_verification_help: "E-posta adresi doğrulanmamış kayıtlı kullanıcılar reddedilir. Misafirler etkilenmez."
+      prefill_authenticated_label: Giriş yapmış kullanıcılar için ad ve e-postayı önceden doldur
+      prefill_authenticated_help: "Ad ve e-posta alanlarını mevcut hesaptan doldurur. Kullanıcılar yine de düzenleyebilir."
+
+      field_name_enabled_label: Ad soyad alanını etkinleştir
+      field_name_required_label: Ad soyad zorunlu
+      field_name_label_label: Ad soyad etiketi
+      field_name_placeholder_label: Ad soyad yer tutucusu
+      field_email_enabled_label: E-posta alanını etkinleştir
+      field_email_required_label: E-posta zorunlu
+      field_email_label_label: E-posta etiketi
+      field_email_placeholder_label: E-posta yer tutucusu
+      field_subject_enabled_label: Konu alanını etkinleştir
+      field_subject_required_label: Konu zorunlu
+      field_subject_label_label: Konu etiketi
+      field_subject_placeholder_label: Konu yer tutucusu
+      field_message_enabled_label: Mesaj alanını etkinleştir
+      field_message_required_label: Mesaj zorunlu
+      field_message_label_label: Mesaj etiketi
+      field_message_placeholder_label: Mesaj yer tutucusu
+      field_category_enabled_label: Kategori alanını etkinleştir
+      field_category_required_label: Kategori zorunlu
+      field_category_label_label: Kategori etiketi
+      field_category_placeholder_label: Kategori yer tutucusu
+      field_phone_enabled_label: Telefon alanını etkinleştir
+      field_phone_required_label: Telefon zorunlu
+      field_phone_label_label: Telefon etiketi
+      field_phone_placeholder_label: Telefon yer tutucusu
+      field_privacy_enabled_label: Gizlilik onayını etkinleştir
+      field_privacy_required_label: Gizlilik onayı zorunlu
+      field_privacy_label_label: Gizlilik onayı etiketi
+      privacy_url_label: Gizlilik politikası adresi
+      privacy_url_help: "Gizlilik politikanıza isteğe bağlı bağlantı. Yalnızca http ve https adresleri kabul edilir."
+      field_enabled_help: "Bu alanı iletişim formunda göster."
+      field_required_help: "Bu alan doldurulmadan form gönderilemez."
+      field_label_help: "Çevrilmiş varsayılanı kullanmak için boş bırakın."
+      field_placeholder_help: "Çevrilmiş varsayılanı kullanmak için boş bırakın."
+
+      message_min_length_label: En az mesaj uzunluğu
+      message_max_length_label: En fazla mesaj uzunluğu
+      subject_max_length_label: En fazla konu uzunluğu
+      message_min_help: "Mesaj için en az karakter sayısı."
+      message_max_help: "Mesaj için en fazla karakter sayısı."
+      subject_max_help: "Konu için en fazla karakter sayısı."
+
+      recipient_email_label: Alıcı e-posta adresi
+      recipient_email_help: "İletişim bildirimlerinin gönderileceği adres. İletişim sayfası etkinken zorunludur."
+      email_subject_prefix_label: E-posta konu öneki
+      email_subject_prefix_help: "Ziyaretçinin konusunun önüne eklenir."
+      sender_name_label: Gönderen adı
+      sender_name_help: "Bildirimde gönderen için kullanılan dostane ad. Adres, Flarum'un posta yapılandırmasından gelir."
+      reply_to_enabled_label: Ziyaretçi e-postasını Yanıtla adresi olarak kullan
+      reply_to_enabled_help: "Yalnızca geçerli bir e-posta adresi verildiğinde uygulanır. Yanıtla adresi doğrulanmamış girdiden asla ayarlanmaz."
+
+      turnstile_enabled_label: Cloudflare Turnstile'ı etkinleştir
+      turnstile_enabled_help: "Herkese açık misafir formları için önerilir. Gizli anahtar sunucuda doğrulanır."
+      turnstile_site_key_label: Turnstile site anahtarı
+      turnstile_site_key_help: "Cloudflare Turnstile panosundan alınan herkese açık anahtar."
+      turnstile_secret_key_label: Turnstile gizli anahtarı
+      turnstile_secret_key_help: "Özel anahtar. Forum ön yüzüne asla gönderilmez ve günlüklere yazılmaz."
+      turnstile_theme_label: Turnstile teması
+      turnstile_theme_help: "Turnstile bileşeninin teması. Otomatik seçeneği ziyaretçinin renk şemasını izler."
+      turnstile_appearance_label: Turnstile görünümü
+      turnstile_appearance_help: "Her zaman bileşeni gösterir; yalnızca etkileşimde seçeneği yalnızca doğrulama gerektiğinde gösterir."
+      turnstile_timeout_label: Turnstile HTTP zaman aşımı (saniye)
+      turnstile_timeout_help: "Cloudflare Siteverify API'si için bekleme süresi. Doğrulama başarısız olursa e-posta gönderilmez."
+      turnstile_expected_hostname_label: Beklenen ana makine adı
+      turnstile_expected_hostname_help: "İsteğe bağlı. Geçerli istek ana makinesi kullanılır. Forumunuz farklı bir iç ana makineye sahip bir vekil sunucu üzerinden sunuluyorsa bunu ayarlayın."
+      turnstile_theme_auto: Otomatik
+      turnstile_theme_light: Açık
+      turnstile_theme_dark: Koyu
+      turnstile_appearance_always: Her zaman görünür
+      turnstile_appearance_interaction_only: Yalnızca etkileşimde
+
+      rate_limit_enabled_label: Hız sınırlamayı etkinleştir
+      rate_limit_enabled_help: "Özetlenmiş IP adresi başına gönderimleri sınırlar. Ham IP adresleri asla saklanmaz."
+      rate_limit_max_label: Zaman aralığı başına en fazla gönderim
+      rate_limit_max_help: "Bir IP adresi için zaman aralığında izin verilen mesaj sayısı."
+      rate_limit_window_label: Hız sınırı aralığı (saniye)
+      rate_limit_window_help: "En fazla gönderim ayarı için zaman aralığı."
+      cooldown_seconds_label: Gönderim bekleme süresi (saniye)
+      cooldown_seconds_help: "Aynı IP adresinden iki gönderim arasındaki en kısa süre. Devre dışı bırakmak için 0 yapın."
+      honeypot_enabled_label: Bal küpünü etkinleştir
+      honeypot_enabled_help: "İnsanların doldurmadığı gizli bir alan ekler. Botlar sahte bir başarı yanıtı alır."
+      time_trap_enabled_label: Zaman tuzağını etkinleştir
+      time_trap_enabled_help: "İnsanların normalde doldurabileceğinden daha hızlı gönderilen formları reddeder. Gizli bir geçen süre değeri kullanır."
+      time_trap_seconds_label: En kısa form doldurma süresi (saniye)
+      time_trap_seconds_help: "Bu süreden daha hızlı gönderilen formlar bot olarak değerlendirilir."
+      duplicate_window_seconds_label: Yinelenen gönderim algılama aralığı (saniye)
+      duplicate_window_seconds_help: "Aynı IP adresinden aynı gönderimler bu süre boyunca reddedilir. Devre dışı bırakmak için 0 yapın."
+      max_request_bytes_label: En fazla istek boyutu (bayt)
+      max_request_bytes_help: "Bundan büyük istekler doğrulamadan önce reddedilir. Varsayılan 65536 bayt (64 KB)."
+
+      access_mode_everyone: Herkes
+      access_mode_registered: Yalnızca kayıtlı kullanıcılar
+      access_mode_guests: Yalnızca misafirler
+      access_mode_disabled: Devre dışı
+      default_language_auto: Geçerli forum dilini kullan
+      language_en: İngilizce
+      language_tr: Türkçe
+
+    validation:
+      boolean: "{field} açık veya kapalı olmalıdır."
+      integer: "{field} tam sayı olmalıdır."
+      range: "{field} {min} ile {max} arasında olmalıdır."
+      enum: "{field} desteklenmeyen bir değer içeriyor."
+      too_long: "{field} en fazla {max} karakter olabilir."
+      whitespace: "{field} boşluk veya satır sonu içeremez."
+      email: "{field} geçerli bir e-posta adresi olmalıdır."
+      required: "{field} zorunludur."
+      url: "{field} geçerli bir http veya https adresi olmalıdır."
+      hostname: "{field} geçerli bir ana makine adı olmalıdır, isteğe bağlı olarak bağlantı noktası içerebilir."
+      message_range: "En az mesaj uzunluğu, en fazla mesaj uzunluğundan büyük olamaz."
+      categories_empty: "Kategori alanını etkinleştirmeden önce en az bir kategori ekleyin."
+      categories_limit: "En fazla 50 kategoriye izin verilir."
+      category_too_long: "Her kategori en fazla 100 karakter olabilir."
+      turnstile_keys: "Turnstile etkinken hem site anahtarı hem de gizli anahtar zorunludur."
+      no_content_field: "İletişim sayfası etkinken en az e-posta alanını veya mesaj alanını etkinleştirin."
+
+    permissions:
+      bypass_rate_limit_label: İletişim formu hız sınırlarını atla
+      bypass_rate_limit_help: "Bu izne sahip grupların üyeleri iletişim formu bekleme süresine veya IP başına sınırlara tabi değildir."
+
+  email:
+    heading: Yeni iletişim mesajı
+    intro: "İletişim formu üzerinden yeni bir mesaj gönderildi."
+    name_label: Ad soyad
+    email_label: E-posta adresi
+    subject_label: Konu
+    category_label: Kategori
+    phone_label: Telefon numarası
+    submitted_at_label: Gönderim zamanı
+    submitter_type_label: Gönderen türü
+    privacy_label: Gizlilik politikası kabul edildi
+    message_label: Mesaj
+    no_subject: Konu yok
+    no_category: Belirtilmedi
+    no_message: Mesaj yok
+    not_provided: Belirtilmedi
+    unknown_sender: Bilinmeyen gönderen
+    registered_user: Kayıtlı kullanıcı
+    guest: Misafir
+    yes: "Evet"
+    no: "Hayır"
+    footer: "{forumTitle} üzerinden gönderildi."

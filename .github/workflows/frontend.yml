@@ -1,0 +1,49 @@
+name: Frontend
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  frontend:
+    name: TypeScript and build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: js/package-lock.json
+
+      - name: Set up PHP for Flarum typings
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.4
+          extensions: curl, dom, fileinfo, gd, intl, mbstring, openssl, pdo_sqlite, sqlite3, xml, zip
+          coverage: none
+
+      - name: Install Flarum typings
+        run: composer update --no-dev --prefer-dist --no-interaction --no-progress --no-scripts
+
+      - name: Install dependencies
+        working-directory: js
+        run: npm ci
+
+      - name: Check formatting
+        working-directory: js
+        run: npm run format-check
+
+      - name: Check TypeScript
+        working-directory: js
+        run: npm run check-typings
+
+      - name: Build production assets
+        working-directory: js
+        run: npm run build

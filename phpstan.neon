@@ -1,0 +1,10 @@
+includes:
+    - vendor/flarum/phpstan/extension.neon
+
+parameters:
+    level: 8
+    paths:
+        - src
+        - extend.php
+    excludePaths:
+        - vendor
