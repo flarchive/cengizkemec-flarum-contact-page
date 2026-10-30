@@ -1,0 +1,140 @@
+.ContactPage {
+  .Page-sidebar {
+    display: none;
+  }
+
+  .Page-content {
+    width: 100%;
+  }
+
+  .ContactPage-hero {
+    background: var(--hero-bg);
+    color: var(--contrast-color, var(--hero-color));
+  }
+
+  .ContactPage-heroTitle {
+    margin: 0;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.4;
+  }
+
+  .ContactPage-heroDescription {
+    max-width: 640px;
+    margin: 8px auto 0;
+    line-height: 1.5;
+    opacity: 0.9;
+  }
+
+  .ContactPage-card {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 30px;
+    background: var(--body-bg);
+    border: 1px solid var(--control-bg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  }
+
+  .ContactPage-form {
+    --gap: 20px;
+  }
+
+  .ContactPage-formRow {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+  }
+
+  .ContactPage-field {
+    width: 100%;
+    margin: 0;
+  }
+
+  .ContactPage-label {
+    font-weight: bold;
+    color: var(--text-color);
+  }
+
+  .ContactPage-required {
+    color: var(--validation-error-color);
+  }
+
+  .ContactPage-fieldError {
+    margin: 0;
+    color: var(--validation-error-color);
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .ContactPage-field--invalid {
+    .FormControl {
+      border-color: var(--validation-error-color);
+    }
+  }
+
+  .ContactPage-messageMeta {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .ContactPage-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.5;
+  }
+
+  .ContactPage-checkbox input {
+    margin-top: 3px;
+  }
+
+  .ContactPage-actions {
+    margin-top: 4px;
+  }
+
+  .ContactPage-turnstileGroup {
+    gap: 8px;
+  }
+
+  .ContactPage-turnstile {
+    min-height: 65px;
+  }
+
+  .ContactPage-honeypot {
+    position: absolute !important;
+    left: -10000px !important;
+    top: auto !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+  }
+
+  .ContactPage-message {
+    width: 100%;
+  }
+
+  .ContactPage-back {
+    margin: 16px 0 0;
+  }
+
+  .ContactPage-back a {
+    color: var(--link-color);
+  }
+
+  @media @phone, @tablet {
+    .ContactPage-card {
+      padding: 20px;
+    }
+
+    .ContactPage-formRow {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+}
