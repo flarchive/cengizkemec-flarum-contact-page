@@ -1,0 +1,35 @@
+# Composer
+/vendor/
+composer.lock
+/auth.json
+
+# Node
+/js/node_modules/
+/js/dist-typings/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test artifacts
+/.phpunit.cache/
+/tests/.phpunit.cache/
+/vendor/flarum/testing/src/integration/tmp/
+*.sqlite
+*.sqlite-journal
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
